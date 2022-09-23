@@ -4,8 +4,8 @@ const state ={
  }
 
 module.exports.connect = function(done){
-   //const url = "mongodb+srv://admin:admin123@cluster0.neqlyc0.mongodb.net/blog?retryWrites=true&w=majority";
-   const url = 'mongodb://127.0.0.1:27017' 
+   const url = "mongodb+srv://admin:admin123@cluster0.neqlyc0.mongodb.net/blog?retryWrites=true&w=majority";
+   //const url = 'mongodb://127.0.0.1:27017' 
    const dbname = "blog"
 
     mongoClient.connect(url,(err,data)=>{

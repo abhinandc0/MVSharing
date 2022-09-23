@@ -1,0 +1,29 @@
+<section>
+    <div class="container">
+        <div class="row ">
+            <a class="btn btn-primary m-3 ml-auto" href="/admin/add-post">Add New Post</a>
+        </div>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Description</th>
+      <th scope="col">Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each posts}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.title}}</td>
+      <td>{{this.author}}</td>
+      <td>{{this.description}}</td>
+      <td> <img src="/images/posts/{{this._id}}.jpg" alt="...." ></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+    </div>
+</section>

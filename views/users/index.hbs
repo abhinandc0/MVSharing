@@ -1,0 +1,16 @@
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            {{#each posts}}
+            <div class="card col-md-4 p-2" style="width: 18rem;">
+                <img src="/images/posts/{{this._id}}.jpg" class="card-img-top" style="height: 10rem; width: 10rem;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <p class="card-text">{{this.description}}</p>
+                    <a href="#" class="btn btn-primary">...read more</a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
